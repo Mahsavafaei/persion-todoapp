@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>برنامه جاری</title>
+    <!-- <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" /> -->
+    <link rel="stylesheet" href="../css/1.css">
+</head>
+<body>
+    <div class="container">
+        <h2>برنامه جاری</h2>
+        <div class="input-section">
+            <input type="text" id="task-input" placeholder="متن برنامه را بنویسید...">
+            <input type="date" id="date-input">
+            <button id="add-button">افزودن</button>
+            <button id="edit-button">ویرایش</button>
+        </div>
+        <div class="todos-operator">
+            <div>
+                <button  class="filter-todo" data-filter="all">همه</button>
+                <button  class="filter-todo" data-filter="pending">در حال انجام</button>
+                <button  class="filter-todo" data-filter="completed">کامل شده</button>
+            </div>
+            <button id="delete-all-button">حذف همه</button>
+        </div>
+    </div>
+    <div id="alert-message"></div>
+    <div class="table">
+     <table>
+        <thead>
+            <tr>
+                    <th>عنوان</th>
+                    <th>تاریخ</th>
+                    <th>وضعیت</th>
+                    <th>عملیات</th>
+            </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+     </table>
+    </div>
+    <script src="../js/1.js"></script>
+</body>
+</html>
